@@ -27,26 +27,26 @@ export default function ServicesHome() {
   ];
 
   return (
-    <section className="py-32 px-6 lg:px-8 bg-white">
+    <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900 text-center mb-6 tracking-tight">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-light text-gray-900 text-center mb-4 sm:mb-6 tracking-tight">
           ¿Qué podemos resolver por vos?
         </h2>
         
-        <p className="text-xs md:text-sm text-gray-500 font-light leading-relaxed text-center mb-20 max-w-4xl mx-auto">
+        <p className="text-xs sm:text-sm md:text-base text-gray-500 font-light leading-relaxed text-center mb-12 sm:mb-16 md:mb-20 max-w-4xl mx-auto px-4">
           Tramitamos más de 50 declaratorias de herederos por año. Todo el proceso 100% online, desde Córdoba o cualquier provincia. Honorarios pactados y transparentes desde el inicio.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0.5 bg-gray-100">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white p-10 border border-transparent hover:border-primary hover:bg-blue-50 transition-all duration-300"
+              className="bg-white p-6 sm:p-8 md:p-10 border border-transparent hover:border-primary hover:bg-blue-50 transition-all duration-300"
             >
-              <h3 className="text-lg font-normal text-gray-900 mb-4 tracking-tight">
+              <h3 className="text-base sm:text-lg md:text-xl font-normal text-gray-900 mb-3 sm:mb-4 tracking-tight">
                 {service.title}
               </h3>
-              <p className="text-sm font-light text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base font-light text-gray-600 leading-relaxed">
                 {service.description}
               </p>
             </div>

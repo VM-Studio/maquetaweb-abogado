@@ -35,32 +35,32 @@ export default function PreguntasFrecuentes() {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <main className="pt-28 pb-32 px-6 lg:px-12">
+      <main className="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 lg:pb-32 px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-20">
-            <span className="text-xs font-light tracking-[0.2em] text-gray-400 uppercase block mb-4">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20">
+            <span className="text-xs sm:text-sm font-light tracking-[0.2em] text-gray-400 uppercase block mb-3 sm:mb-4">
               FAQ
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-4 sm:mb-6 tracking-tight px-4">
               Preguntas frecuentes
             </h1>
-            <p className="text-base md:text-lg text-gray-600 font-light max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-gray-600 font-light max-w-3xl mx-auto px-4">
               Resolvemos las dudas más comunes sobre sucesiones y declaratorias de herederos en Córdoba.
             </p>
           </div>
 
           {/* FAQ Grid */}
-          <div className="grid gap-6 mb-20">
+          <div className="grid gap-4 sm:gap-6 mb-12 sm:mb-16 md:mb-20">
             {faqs.map((faq, index) => (
               <div 
                 key={index}
-                className="bg-white border border-gray-200 p-8 hover:border-primary hover:bg-blue-50 transition-all duration-300"
+                className="bg-white border border-gray-200 p-6 sm:p-8 hover:border-primary hover:bg-blue-50 transition-all duration-300"
               >
-                <h3 className="text-lg md:text-xl font-medium text-gray-900 mb-3 tracking-tight">
+                <h3 className="text-base sm:text-lg md:text-xl font-medium text-gray-900 mb-3 tracking-tight">
                   {faq.question}
                 </h3>
-                <p className="text-sm md:text-base font-light text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base font-light text-gray-600 leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -68,18 +68,18 @@ export default function PreguntasFrecuentes() {
           </div>
 
           {/* CTA Section */}
-          <div className="text-center py-16 border-t border-gray-100">
-            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">
+          <div className="text-center py-12 sm:py-16 border-t border-gray-100">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-light text-gray-900 mb-3 sm:mb-4 px-4">
               ¿Tenés otra consulta?
             </h2>
-            <p className="text-base text-gray-600 font-light mb-8">
+            <p className="text-sm sm:text-base text-gray-600 font-light mb-6 sm:mb-8 px-4">
               Contactanos por WhatsApp y te respondemos rápido, sin compromiso.
             </p>
             <a 
               href="https://wa.me/5491112345678?text=Hola,%20tengo%20una%20consulta%20sobre%20sucesiones"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center group px-8 py-4 bg-gradient-to-r from-primary to-primary-light text-white text-sm font-medium tracking-wide hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="inline-flex items-center justify-center group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary to-primary-light text-white text-sm sm:text-base font-medium tracking-wide hover:shadow-lg hover:scale-105 transition-all duration-300 mx-4"
             >
               Contactanos por WhatsApp
               <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>

@@ -59,31 +59,31 @@ export default function Nosotros() {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <main className="pt-32 pb-24 px-6 lg:px-8">
+      <main className="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24 px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Hero Section */}
-        <div className="max-w-6xl mx-auto mb-32">
-          <div className="text-center mb-24">
-            <span className="text-xs font-light tracking-[0.2em] text-gray-400 uppercase block mb-6">
+        <div className="max-w-6xl mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-32">
+          <div className="text-center mb-12 sm:mb-16 md:mb-20 lg:mb-24">
+            <span className="text-xs sm:text-sm font-light tracking-[0.2em] text-gray-400 uppercase block mb-4 sm:mb-6">
               Nuestro Estudio
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-8 tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-6 sm:mb-8 tracking-tight px-4">
               +20 años resolviendo sucesiones en Córdoba
             </h1>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-8">
-            <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8 px-4">
+            <p className="text-base sm:text-lg md:text-xl font-light text-gray-700 leading-relaxed">
               El Dr. Filí y su equipo se especializan exclusivamente en sucesiones y 
               declaratorias de herederos. Con más de 20 años de experiencia, esto nos permite 
               atender casos de cualquier magnitud: desde trámites simples hasta situaciones 
               complejas con conflictos familiares o bienes en distintas provincias.
             </p>
-            <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-light text-gray-700 leading-relaxed">
               Entendemos que no siempre se cuenta con dinero en efectivo para arrancar. 
               Por eso ofrecemos facilidades de pago, incluyendo tarjeta de crédito y cobro 
               parcial a resultados. Podemos pactar una parte inicial y el resto cuando se vendan los bienes.
             </p>
-            <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-light text-gray-700 leading-relaxed">
               Nuestros honorarios se pactan con transparencia desde el primer contacto. Evitamos 
               las regulaciones judiciales que pueden llegar hasta el 20% o 30%, reduciendo 
               considerablemente los costos del trámite para vos.
@@ -92,9 +92,9 @@ export default function Nosotros() {
         </div>
 
         {/* Valores */}
-        <div className="max-w-6xl mx-auto mb-32">
-          <div className="text-center mb-16">
-            <span className="text-xs font-light tracking-[0.2em] text-gray-400 uppercase">
+        <div className="max-w-6xl mx-auto mb-16 sm:mb-20 md:mb-24 lg:mb-32">
+          <div className="text-center mb-12 sm:mb-16">
+            <span className="text-xs sm:text-sm font-light tracking-[0.2em] text-gray-400 uppercase">
               Nuestros Valores
             </span>
           </div>

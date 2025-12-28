@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AUGUSTO Filí & Asociados - Sitio Web
 
-## Getting Started
+Sitio web profesional para el estudio jurídico AUGUSTO Filí & Asociados, desarrollado con Next.js 14, React 19 y Tailwind CSS 4.
 
-First, run the development server:
+## 🎯 Características
+
+- **Diseño Moderno y Profesional**: Inspirado en las mejores prácticas de diseño web para estudios jurídicos
+- **Totalmente Responsivo**: Adaptado para dispositivos móviles, tablets y escritorio
+- **Optimizado para SEO**: Metadata configurada para mejor posicionamiento en buscadores
+- **Animaciones Suaves**: Transiciones y efectos visuales profesionales
+- **Formulario de Contacto**: Sistema de consulta integrado
+- **6 Áreas de Práctica**: Derecho Civil, Comercial, Laboral, Inmobiliario, Familia y Penal
+
+## 🚀 Tecnologías
+
+- **Framework**: Next.js 16.1.1
+- **React**: 19.2.3
+- **Estilos**: Tailwind CSS 4
+- **TypeScript**: 5.x
+- **Fuentes**: Inter (Google Fonts)
+
+## 📋 Secciones del Sitio
+
+1. **Header/Navegación**: Menú fijo con logo y navegación principal
+2. **Hero Section**: Presentación principal con llamados a la acción
+3. **Áreas de Práctica**: Grid con las 6 especialidades legales
+4. **Metodología**: Proceso de trabajo en 4 pasos
+5. **Por qué elegirnos**: Comparativa y ventajas diferenciales
+6. **FAQ**: Preguntas frecuentes
+7. **Contacto**: Formulario y datos de contacto
+8. **Footer**: Links, redes sociales y información legal
+
+## 🛠️ Instalación y Desarrollo
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Build para Producción
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📁 Estructura del Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+```
+maquetaweb-abogado/
+├── app/
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Services.tsx
+│   │   ├── Methodology.tsx
+│   │   ├── WhyUs.tsx
+│   │   ├── FAQ.tsx
+│   │   ├── Contact.tsx
+│   │   └── Footer.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── package.json
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Personalización
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Colores Principales
 
-## Deploy on Vercel
+- **Azul Principal**: `#2563eb` (blue-600)
+- **Azul Hover**: `#1d4ed8` (blue-700)
+- **Fondo**: Blanco y grises suaves
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Fuentes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Sans-serif**: Inter (Variable)
+
+## 📝 Contenido
+
+El sitio incluye:
+
+- Información completa sobre las áreas de práctica legal
+- Proceso de trabajo detallado
+- FAQs sobre servicios legales
+- Formulario de contacto funcional
+- Información de contacto completa
+
+## 🔧 Configuración Adicional
+
+Para personalizar el contenido:
+
+1. **Información de contacto**: Editar `/app/components/Contact.tsx`
+2. **Áreas de práctica**: Editar `/app/components/Services.tsx`
+3. **Preguntas frecuentes**: Editar `/app/components/FAQ.tsx`
+4. **Metadata SEO**: Editar `/app/layout.tsx`
+
+## 📱 Redes Sociales
+
+El sitio incluye enlaces para:
+
+- LinkedIn
+- Facebook
+- Instagram
+
+Actualizar los links en `/app/components/Footer.tsx`
+
+## 🌐 Deploy
+
+Recomendado: [Vercel](https://vercel.com)
+
+```bash
+vercel deploy
+```
+
+---
+
+© 2025 AUGUSTO Filí & Asociados. Todos los derechos reservados.

@@ -3,6 +3,7 @@ import Hero from './components/Hero';
 import ServicesHome from './components/ServicesHome';
 import ProcedureHome from './components/ProcedureHome';
 import CasesHome from './components/CasesHome';
+import FAQHome from './components/FAQHome';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <ServicesHome />
         <ProcedureHome />
         <CasesHome />
+        <FAQHome />
       </main>
       <Footer />
     </div>

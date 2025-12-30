@@ -14,8 +14,8 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar - Solo Desktop - GRIS */}
-      <div className="hidden md:block bg-gray-800 text-white py-1.5 fixed top-0 left-0 right-0 z-50">
+      {/* Top Bar - Solo Desktop - AZUL */}
+      <div className="hidden md:block bg-blue-800 text-white py-1.5 fixed top-0 left-0 right-0 z-50">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12 text-center">
           <p className="text-xs font-medium">
             ✓ Tramitamos más de <span className="font-bold">50 declaratorias de herederos por año</span>. Todo el proceso <span className="font-bold">100% online</span>

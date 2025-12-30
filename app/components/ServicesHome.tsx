@@ -2,38 +2,44 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import IconoDeclaratoria from '@/public/icono-Declaratoria.gif';
+import IconoSucesiones from '@/public/icono-Sucesiones.gif';
+import IconoTracto from '@/public/icono-Tracto.gif';
+import IconoAdjudicacion from '@/public/icono-Adjudicacion.gif';
+import IconoRepresentacion from '@/public/icono-Representacion.gif';
+import IconoNegociacion from '@/public/icono-Negociacion.gif';
 
 export default function ServicesHome() {
   const services = [
     {
       title: "Declaratoria de herederos",
       description: "Gestionamos todo el trámite en la nueva Oficina de Procesos Sucesorios de Córdoba. Desde el inicio hasta que puedas disponer de los bienes.",
-      gif: "/icono-Declaratoria.gif"
+      gif: IconoDeclaratoria
     },
     {
       title: "Sucesiones complejas",
       description: "Conflictos entre herederos, bienes en distintas provincias o situaciones trabadas. Negociamos para evitar subastas y encontrar soluciones justas.",
-      gif: "/icono-Sucesiones.gif"
+      gif: IconoSucesiones
     },
     {
       title: "Tracto abreviado",
       description: "Transferencia directa de inmuebles sin escrituras intermedias. Más rápido, menos costos, menos trámites.",
-      gif: "/icono-Tracto.gif"
+      gif: IconoTracto
     },
     {
       title: "Adjudicación de vehículos",
       description: "Gestión completa para transferir autos, motos y rodados a tu nombre. Incluye toda la documentación necesaria.",
-      gif: "/icono-Adjudicación.gif"
+      gif: IconoAdjudicacion
     },
     {
       title: "Representación desde cualquier provincia",
       description: "¿Vivís fuera de Córdoba pero la sucesión se tramita acá? Te representamos sin que tengas que viajar. Todo 100% online.",
-      gif: "/icono-Representación.gif"
+      gif: IconoRepresentacion
     },
     {
       title: "Negociación entre herederos",
       description: "Mediamos para llegar a acuerdos que respeten los derechos de todos. Evitamos juicios largos, costosos y regulaciones judiciales elevadas.",
-      gif: "/icono-Negociación.gif"
+      gif: IconoNegociacion
     }
   ];
 

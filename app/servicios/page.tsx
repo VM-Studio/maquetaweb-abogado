@@ -4,6 +4,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import { useState } from 'react';
+import IconoDeclaratoria from '@/public/icono-Declaratoria.gif';
+import IconoSucesiones from '@/public/icono-Sucesiones.gif';
+import IconoTracto from '@/public/icono-Tracto.gif';
+import IconoAdjudicacion from '@/public/icono-Adjudicacion.gif';
+import IconoRepresentacion from '@/public/icono-Representacion.gif';
+import IconoNegociacion from '@/public/icono-Negociacion.gif';
 
 export default function ServiciosPage() {
   const [expandedServices, setExpandedServices] = useState<number[]>([]);
@@ -20,7 +26,7 @@ export default function ServiciosPage() {
     {
       title: "Declaratoria de herederos",
       description: "Gestionamos todo el trámite en la nueva Oficina de Procesos Sucesorios de Córdoba. Te acompañamos desde el inicio hasta que puedas disponer de los bienes de forma legal y ordenada.",
-      gif: "/icono-Declaratoria.gif",
+      gif: IconoDeclaratoria,
       icon: "📄",
       features: [
         "Presentación completa de documentación",
@@ -32,7 +38,7 @@ export default function ServiciosPage() {
     {
       title: "Sucesiones complejas",
       description: "Resolvemos casos difíciles: conflictos entre herederos, bienes en distintas provincias o situaciones trabadas. Negociamos para evitar subastas y encontrar soluciones justas para todos.",
-      gif: "/icono-Sucesiones.gif",
+      gif: IconoSucesiones,
       icon: "📚",
       features: [
         "Análisis integral del caso",
@@ -44,7 +50,7 @@ export default function ServiciosPage() {
     {
       title: "Tracto abreviado",
       description: "Transferencia directa de inmuebles sin escrituras intermedias. Ahorrás tiempo, costos y simplificás el proceso de transmisión de propiedades.",
-      gif: "/icono-Tracto.gif",
+      gif: IconoTracto,
       icon: "🏠",
       features: [
         "Sin escrituras intermedias innecesarias",
@@ -56,7 +62,7 @@ export default function ServiciosPage() {
     {
       title: "Adjudicación de vehículos",
       description: "Gestión completa para transferir autos, motos y rodados a tu nombre. Nos encargamos de toda la documentación necesaria ante el Registro Nacional.",
-      gif: "/icono-Adjudicación.gif",
+      gif: IconoAdjudicacion,
       icon: "🚗",
       features: [
         "Trámite completo ante el Registro",
@@ -68,7 +74,7 @@ export default function ServiciosPage() {
     {
       title: "Representación desde cualquier provincia",
       description: "¿Vivís fuera de Córdoba pero la sucesión se tramita acá? Te representamos sin que tengas que viajar. Todo el proceso es 100% online con firma digital.",
-      gif: "/icono-Representación.gif",
+      gif: IconoRepresentacion,
       icon: "🌎",
       features: [
         "Representación legal completa",
@@ -80,7 +86,7 @@ export default function ServiciosPage() {
     {
       title: "Negociación entre herederos",
       description: "Mediamos para llegar a acuerdos que respeten los derechos de todos. Evitamos juicios largos, costosos y regulaciones judiciales elevadas.",
-      gif: "/icono-Negociación.gif",
+      gif: IconoNegociacion,
       icon: "⚖️",
       features: [
         "Mediación profesional y neutral",

@@ -168,14 +168,14 @@ export default function ServiciosPage() {
                     {/* Botón Leer más/menos */}
                     <button
                       onClick={() => toggleService(index)}
-                      className="text-[#d5c5ac] text-sm font-bold mb-6 text-left hover:text-[#d5c5ac] transition-colors"
+                      className="text-[#e9a459] text-sm font-bold mb-6 text-left hover:text-[#e9a459] transition-colors"
                     >
                       {expandedServices.includes(index) ? 'Leer menos' : 'Leer más'}
                     </button>
 
                     {/* Botón */}
                     <a
-                      href="https://wa.me/5491112345678?text=Hola,%20quiero%20consultar%20sobre%20este%20servicio"
+                      href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20sobre%20este%20servicio"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-5 py-2.5 bg-gray-200 text-gray-800 text-sm font-medium hover:bg-gray-300 transition-all duration-300 rounded-md"
@@ -199,10 +199,10 @@ export default function ServiciosPage() {
               Cada caso es único. Contactanos y te asesoramos de forma personalizada.
             </p>
             <a
-              href="https://wa.me/5491112345678?text=Hola,%20quiero%20hacer%20una%20consulta"
+              href="https://wa.me/5493515186325?text=Hola,%20quiero%20hacer%20una%20consulta"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#d5c5ac] text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#e9a459] text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
             >
               Contactar ahora
             </a>

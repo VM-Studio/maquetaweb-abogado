@@ -19,7 +19,7 @@ const robotoSlab = Roboto_Slab({
 
 export const metadata: Metadata = {
   title: "AUGUSTO Filí & Asociados | Estudio Jurídico en Buenos Aires",
-  description: "Estudio jurídico con más de 20 años de experiencia. Asesoramiento legal integral en derecho civil, comercial, laboral, penal y más. Primera consulta gratuita.",
+  description: "Estudio jurídico con más de 20 años de experiencia. Asesoramiento legal integral en derecho civil, comercial, laboral, penal y más. Primera consulta incluida en el costo del trabajo.",
   keywords: "abogados, estudio jurídico, asesoramiento legal, buenos aires, derecho civil, derecho comercial, derecho laboral",
 };
 

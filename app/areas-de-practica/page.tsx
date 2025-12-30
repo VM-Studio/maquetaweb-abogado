@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Áreas de Práctica | AUGUSTO Filí & Asociados',
@@ -95,12 +94,14 @@ export default function AreasDePractica() {
             <p className="text-gray-500 font-light mb-8">
               ¿No encontrás tu caso específico?
             </p>
-            <Link 
-              href="/contacto"
+            <a 
+              href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20sobre%20un%20caso%20específico"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-8 py-4 bg-gray-900 text-white text-sm font-light tracking-wide hover:bg-gray-800 transition-colors duration-300"
             >
               Consultanos →
-            </Link>
+            </a>
           </div>
         </div>
       </main>

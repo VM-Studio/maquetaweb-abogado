@@ -8,7 +8,7 @@ export default function FAQHome() {
   const faqs = [
     {
       question: '¿Cuánto cuesta la consulta inicial?',
-      answer: 'La primera consulta es completamente gratuita. Te explicamos tus opciones y presupuesto sin compromiso.'
+      answer: 'La primera consulta es incluida en el costo del trabajo. Te explicamos tus opciones y presupuesto sin compromiso.'
     },
     {
       question: '¿Cuánto tiempo demora una sucesión?',

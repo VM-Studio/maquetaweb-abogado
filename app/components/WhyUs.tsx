@@ -7,7 +7,7 @@ export default function WhyUs() {
   ];
 
   const ourFeatures = [
-    { feature: 'Primera consulta gratuita', icon: '✓' },
+    { feature: 'Primera consulta incluida en el costo del trabajo', icon: '✓' },
     { feature: 'Comunicación constante y clara', icon: '✓' },
     { feature: 'Honorarios transparentes desde el día 1', icon: '✓' },
     { feature: 'Compromiso con tu caso hasta el final', icon: '✓' }

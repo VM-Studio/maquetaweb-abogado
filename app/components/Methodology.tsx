@@ -3,7 +3,7 @@ export default function Methodology() {
     {
       number: '01',
       title: 'Consulta Inicial',
-      description: 'Analizamos tu caso en detalle. Primera consulta gratuita para entender tu situación y necesidades legales.',
+      description: 'Analizamos tu caso en detalle. Primera consulta incluida en el costo del trabajo para entender tu situación y necesidades legales.',
       time: 'MISMO DÍA'
     },
     {

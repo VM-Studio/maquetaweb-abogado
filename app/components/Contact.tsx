@@ -44,7 +44,7 @@ export default function Contact() {
             [ EMPEZÁ HOY ]
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Agenda tu consulta gratuita
+            Agenda tu consulta
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Respondemos en menos de 24 horas. Primera consulta sin cargo ni compromiso.
@@ -159,7 +159,7 @@ export default function Contact() {
                 disabled={isSubmitting}
                 className="w-full bg-blue-600 text-white py-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-lg disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Enviando...' : 'Enviar consulta gratuita'}
+                {isSubmitting ? 'Enviando...' : 'Enviar consulta'}
               </button>
 
               <p className="text-sm text-gray-500 text-center">
@@ -182,7 +182,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Teléfono</h4>
-                    <a href="tel:+5491112345678" className="text-blue-600 hover:text-blue-700">
+                    <a href="tel:+5493515186325" className="text-blue-600 hover:text-blue-700">
                       +54 9 11 1234-5678
                     </a>
                     <p className="text-sm text-gray-600 mt-1">Lun a Vie, 9:00 - 18:00hs</p>
@@ -195,8 +195,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <a href="mailto:contacto@augustofili.com" className="text-blue-600 hover:text-blue-700">
-                      contacto@augustofili.com
+                    <a href="mailto:ab.augustofili@gmail.com" className="text-blue-600 hover:text-blue-700">
+                      ab.augustofili@gmail.com
                     </a>
                     <p className="text-sm text-gray-600 mt-1">Respondemos en 24hs</p>
                   </div>
@@ -223,7 +223,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">WhatsApp</h4>
                     <a 
-                      href="https://wa.me/5491112345678" 
+                      href="https://wa.me/5493515186325" 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-700"

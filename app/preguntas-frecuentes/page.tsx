@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Link from 'next/link';
 
 export default function PreguntasFrecuentes() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -31,7 +30,7 @@ export default function PreguntasFrecuentes() {
     },
     {
       question: '¿Cuánto cuesta una sucesión?',
-      answer: 'Los costos varían según el valor de los bienes, la complejidad del caso y si es judicial o extrajudicial. Incluyen: honorarios del abogado, tasas judiciales, publicaciones en el Boletín Oficial, certificados, escrituración e impuestos. En una primera consulta gratuita, evaluamos tu caso y te brindamos un presupuesto detallado y transparente de todos los costos involucrados.'
+      answer: 'Los costos varían según el valor de los bienes, la complejidad del caso y si es judicial o extrajudicial. Incluyen: honorarios del abogado, tasas judiciales, publicaciones en el Boletín Oficial, certificados, escrituración e impuestos. En una primera consulta incluida en el costo del trabajo, evaluamos tu caso y te brindamos un presupuesto detallado y transparente de todos los costos involucrados.'
     },
     {
       question: '¿Qué es una sucesión extrajudicial y cuándo se puede hacer?',
@@ -86,7 +85,7 @@ export default function PreguntasFrecuentes() {
                   <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center transition-transform duration-300"
                        style={{ transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                     <svg 
-                      className="w-5 h-5 text-[#d5c5ac]" 
+                      className="w-5 h-5 text-[#e9a459]" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -127,12 +126,14 @@ export default function PreguntasFrecuentes() {
           <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Cada caso de sucesión es único. Contáctanos para una consulta personalizada y sin compromiso.
           </p>
-          <Link 
-            href="/contacto"
-            className="inline-block bg-[#d5c5ac] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          <a 
+            href="https://wa.me/5493515186325?text=Hola,%20tengo%20una%20pregunta%20sobre%20sucesiones"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#e9a459] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Consultar mi caso
-          </Link>
+          </a>
         </div>
       </section>
 

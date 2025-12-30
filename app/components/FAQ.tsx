@@ -8,7 +8,7 @@ export default function FAQ() {
   const faqs = [
     {
       question: '¿Cuánto cuesta la consulta inicial?',
-      answer: 'La primera consulta es completamente gratuita. En este encuentro analizamos tu caso, te explicamos tus opciones legales y te damos un presupuesto claro y sin sorpresas. Solo si decidís seguir adelante con nosotros comenzamos a trabajar.'
+      answer: 'La primera consulta es incluida en el costo del trabajo. En este encuentro analizamos tu caso, te explicamos tus opciones legales y te damos un presupuesto claro y sin sorpresas. Solo si decidís seguir adelante con nosotros comenzamos a trabajar.'
     },
     {
       question: '¿Cuánto tiempo demora resolver mi caso?',

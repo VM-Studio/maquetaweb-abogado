@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="sm:col-span-2">
             <Link href="/" className="inline-block mb-3 sm:mb-4 md:mb-5">
               <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
-                <span className="text-gray-900">AUGUSTO</span> <span className="text-[#d5c5ac]">Filí</span>
+                <span className="text-gray-900">AUGUSTO</span> <span className="text-[#e9a459]">Filí</span>
               </span>
             </Link>
             <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed max-w-md mx-auto sm:mx-0">
@@ -20,27 +20,27 @@ export default function Footer() {
 
           {/* Navigation Column */}
           <div>
-            <h3 className="text-xs font-bold text-[#d5c5ac] uppercase tracking-wider mb-4 sm:mb-5">
+            <h3 className="text-xs font-bold text-[#e9a459] uppercase tracking-wider mb-4 sm:mb-5">
               Navegación
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
+                <Link href="/" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
+                <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
+                <Link href="/nosotros" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
+                <Link href="/contacto" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
                   Contacto
                 </Link>
               </li>
@@ -49,18 +49,18 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-xs font-bold text-[#d5c5ac] uppercase tracking-wider mb-4 sm:mb-5">
+            <h3 className="text-xs font-bold text-[#e9a459] uppercase tracking-wider mb-4 sm:mb-5">
               Contacto
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+5491112345678" className="text-sm font-bold text-gray-700 hover:text-[#d5c5ac] transition-colors">
-                  +54 9 11 1234-5678
+                <a href="tel:+5493515186325" className="text-sm font-bold text-gray-700 hover:text-[#e9a459] transition-colors">
+                  +54 9 351 518-6325
                 </a>
               </li>
               <li>
-                <a href="mailto:contacto@augustofili.com" className="text-sm font-bold text-gray-700 hover:text-[#d5c5ac] transition-colors break-all">
-                  contacto@augustofili.com
+                <a href="mailto:ab.augustofili@gmail.com" className="text-sm font-bold text-gray-700 hover:text-[#e9a459] transition-colors break-all">
+                  ab.augustofili@gmail.com
                 </a>
               </li>
               <li className="text-sm font-medium text-gray-600">
@@ -83,7 +83,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#d5c5ac] transition-colors"
+                className="text-gray-400 hover:text-[#e9a459] transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ export default function Footer() {
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#d5c5ac] transition-colors"
+                className="text-gray-400 hover:text-[#e9a459] transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">

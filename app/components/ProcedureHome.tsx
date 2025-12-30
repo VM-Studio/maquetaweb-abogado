@@ -6,25 +6,25 @@ export default function ProcedureHome() {
       number: "1",
       title: "Nos contactás por WhatsApp",
       description: "Contanos tu situación. Te respondemos rápido, sin compromiso, y te explicamos si tu trámite debe hacerse en Córdoba.",
-      color: "bg-[#d5c5ac]"
+      color: "bg-[#e9a459]"
     },
     {
       number: "2",
       title: "Pactamos honorarios",
       description: "Te damos un presupuesto claro y transparente. Ofrecemos facilidades de pago, tarjeta de crédito y cobro parcial a resultados.",
-      color: "bg-blue-200"
+      color: "bg-blue-600"
     },
     {
       number: "3",
       title: "Arrancamos el trámite 100% online",
       description: "No importa dónde vivas. Nos encargamos de la gestión completa en la Oficina de Procesos Sucesorios de Córdoba.",
-      color: "bg-[#d5c5ac]"
+      color: "bg-[#e9a459]"
     },
     {
       number: "4",
       title: "Te acompañamos hasta el final",
       description: "Seguimos tu caso hasta que puedas disponer de los bienes. Si hay conflictos, negociamos para evitar regulaciones judiciales elevadas.",
-      color: "bg-blue-200"
+      color: "bg-blue-600"
     }
   ];
 
@@ -74,10 +74,10 @@ export default function ProcedureHome() {
         {/* CTA */}
         <div className="text-center mt-16 sm:mt-20 md:mt-24">
           <a 
-            href="https://wa.me/5491112345678?text=Hola,%20quiero%20consultar%20mi%20caso%20de%20sucesión"
+            href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso%20de%20sucesión"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center group px-6 py-3 bg-[#d5c5ac] text-white text-sm sm:text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-md"
+            className="inline-flex items-center justify-center group px-6 py-3 bg-[#e9a459] text-white text-sm sm:text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-md"
           >
             Quiero consultar mi caso
             <span className="inline-block ml-3 group-hover:translate-x-1 transition-transform text-lg">→</span>

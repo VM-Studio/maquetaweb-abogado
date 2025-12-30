@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -102,14 +101,16 @@ export default function Nosotros() {
             ¿Listo para comenzar?
           </h2>
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
-            Agenda tu consulta gratuita y te explicamos cómo podemos ayudarte con tu caso.
+            Agenda tu consulta y te explicamos cómo podemos ayudarte con tu caso.
           </p>
-          <Link 
-            href="/contacto"
-            className="inline-block bg-[#d5c5ac] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          <a 
+            href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#e9a459] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Consultar mi caso
-          </Link>
+          </a>
         </div>
       </section>
 

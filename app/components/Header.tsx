@@ -46,15 +46,15 @@ export default function Header() {
                 href="/" 
                 className={`px-2 lg:px-3 py-1.5 text-xs lg:text-sm font-medium transition-colors ${
                   isActive('/') 
-                    ? 'text-[#d5c5ac]' 
-                    : 'text-white hover:text-[#d5c5ac]'
+                    ? 'text-[#e9a459]' 
+                    : 'text-white hover:text-[#e9a459]'
                 }`}
               >
                 Inicio
               </Link>
               <Link 
                 href="/#servicios" 
-                className="px-2 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-white hover:text-[#d5c5ac] transition-colors"
+                className="px-2 lg:px-3 py-1.5 text-xs lg:text-sm font-medium text-white hover:text-[#e9a459] transition-colors"
                 scroll={true}
               >
                 Servicios
@@ -63,8 +63,8 @@ export default function Header() {
                 href="/preguntas-frecuentes" 
                 className={`px-2 lg:px-3 py-1.5 text-xs lg:text-sm font-medium transition-colors ${
                   isActive('/preguntas-frecuentes') 
-                    ? 'text-[#d5c5ac]' 
-                    : 'text-white hover:text-[#d5c5ac]'
+                    ? 'text-[#e9a459]' 
+                    : 'text-white hover:text-[#e9a459]'
                 }`}
               >
                 FAQ
@@ -73,22 +73,22 @@ export default function Header() {
                 href="/nosotros" 
                 className={`px-2 lg:px-3 py-1.5 text-xs lg:text-sm font-medium transition-colors ${
                   isActive('/nosotros') 
-                    ? 'text-[#d5c5ac]' 
-                    : 'text-white hover:text-[#d5c5ac]'
+                    ? 'text-[#e9a459]' 
+                    : 'text-white hover:text-[#e9a459]'
                 }`}
               >
                 Nosotros
               </Link>
             <Link 
               href="/contacto" 
-              className="ml-2 lg:ml-3 px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold bg-[#d5c5ac] text-white hover:shadow-lg hover:scale-105 transition-all duration-300 rounded-md"
+              className="ml-2 lg:ml-3 px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold bg-[#e9a459] text-white hover:shadow-lg hover:scale-105 transition-all duration-300 rounded-md"
             >
               Contacto
             </Link>
           </div>            {/* Mobile menu button - Mejorado */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 text-white hover:text-[#d5c5ac] transition-colors"
+              className="md:hidden p-2 text-white hover:text-[#e9a459] transition-colors"
               aria-label="Toggle menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,8 +109,8 @@ export default function Header() {
                   href="/" 
                   className={`px-6 py-3 text-sm font-bold transition-colors ${
                     isActive('/')
-                      ? 'text-[#d5c5ac] bg-gray-900'
-                      : 'text-white hover:text-[#d5c5ac] hover:bg-gray-900'
+                      ? 'text-[#e9a459] bg-gray-900'
+                      : 'text-white hover:text-[#e9a459] hover:bg-gray-900'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -118,7 +118,7 @@ export default function Header() {
                 </Link>
                 <Link 
                   href="/#servicios" 
-                  className="px-6 py-3 text-sm font-bold transition-colors text-white hover:text-[#d5c5ac] hover:bg-gray-900"
+                  className="px-6 py-3 text-sm font-bold transition-colors text-white hover:text-[#e9a459] hover:bg-gray-900"
                   onClick={() => setIsMenuOpen(false)}
                   scroll={true}
                 >
@@ -128,8 +128,8 @@ export default function Header() {
                   href="/preguntas-frecuentes" 
                   className={`px-6 py-3 text-sm font-bold transition-colors ${
                     isActive('/preguntas-frecuentes')
-                      ? 'text-[#d5c5ac] bg-gray-900'
-                      : 'text-white hover:text-[#d5c5ac] hover:bg-gray-900'
+                      ? 'text-[#e9a459] bg-gray-900'
+                      : 'text-white hover:text-[#e9a459] hover:bg-gray-900'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -139,8 +139,8 @@ export default function Header() {
                   href="/nosotros" 
                   className={`px-6 py-3 text-sm font-bold transition-colors ${
                     isActive('/nosotros')
-                      ? 'text-[#d5c5ac] bg-gray-900'
-                      : 'text-white hover:text-[#d5c5ac] hover:bg-gray-900'
+                      ? 'text-[#e9a459] bg-gray-900'
+                      : 'text-white hover:text-[#e9a459] hover:bg-gray-900'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -149,7 +149,7 @@ export default function Header() {
                 <div className="px-4 py-3">
                   <Link 
                     href="/contacto" 
-                    className="block px-6 py-3 text-sm font-bold bg-[#d5c5ac] text-white text-center hover:shadow-lg transition-all duration-300 rounded-md"
+                    className="block px-6 py-3 text-sm font-bold bg-[#e9a459] text-white text-center hover:shadow-lg transition-all duration-300 rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contacto

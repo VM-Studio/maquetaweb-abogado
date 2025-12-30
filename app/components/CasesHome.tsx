@@ -63,10 +63,10 @@ export default function CasesHome() {
             {/* Botones */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a 
-                href="https://wa.me/5491112345678?text=Hola,%20quiero%20consultar%20mi%20caso"
+                href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-[#d5c5ac] text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md whitespace-nowrap"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#e9a459] text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md whitespace-nowrap"
               >
                 Consultar mi caso
               </a>

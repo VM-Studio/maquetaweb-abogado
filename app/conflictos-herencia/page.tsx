@@ -23,7 +23,7 @@ export default function ConflictosHerencia() {
             {/* Text Column */}
             <div className="text-center lg:text-left order-2 lg:order-1">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-gray-900 mb-4 sm:mb-6 md:mb-8 tracking-tight">
-                ¿Problemas con tu <span className="text-[#d5c5ac]">Herencia?</span>
+                ¿Problemas con tu <span className="text-[#e9a459]">Herencia?</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium mb-4 sm:mb-6 md:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 ¿El resto de los herederos no respetan tus derechos? Te representamos y aseguramos que el trato sea igual a igual.
@@ -32,10 +32,10 @@ export default function ConflictosHerencia() {
                 Negociamos para evitar subastas. Defendemos lo que te corresponde.
               </p>
               <a 
-                href="https://wa.me/5491112345678?text=Hola,%20tengo%20problemas%20con%20una%20herencia"
+                href="https://wa.me/5493515186325?text=Hola,%20tengo%20problemas%20con%20una%20herencia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#d5c5ac] text-white text-sm sm:text-base lg:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#e9a459] text-white text-sm sm:text-base lg:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
               >
                 Contanos tu situación →
               </a>

@@ -23,7 +23,7 @@ export default function AbogadoHerenciasCordoba() {
             {/* Text Column */}
             <div className="text-center lg:text-left order-2 lg:order-1">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-[1.1] text-gray-900 mb-4 sm:mb-6 md:mb-8 tracking-tight">
-                Abogados de <span className="text-[#d5c5ac]">Herencias en Córdoba</span>
+                Abogados de <span className="text-[#e9a459]">Herencias en Córdoba</span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 font-medium mb-4 sm:mb-6 md:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
                 Resolvemos tu herencia sin complicaciones. Inmuebles, vehículos, testamentos.
@@ -32,10 +32,10 @@ export default function AbogadoHerenciasCordoba() {
                 Especialistas en declaratorias de herederos y tracto abreviado. Costos transparentes.
               </p>
               <a 
-                href="https://wa.me/5491112345678?text=Hola,%20necesito%20hablar%20con%20un%20abogado%20de%20herencias"
+                href="https://wa.me/5493515186325?text=Hola,%20necesito%20hablar%20con%20un%20abogado%20de%20herencias"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#d5c5ac] text-white text-sm sm:text-base lg:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#e9a459] text-white text-sm sm:text-base lg:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
               >
                 Hablar con un abogado →
               </a>

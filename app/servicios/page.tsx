@@ -168,7 +168,7 @@ export default function ServiciosPage() {
                     {/* Botón Leer más/menos */}
                     <button
                       onClick={() => toggleService(index)}
-                      className="text-amber-700 text-sm font-bold mb-6 text-left hover:text-amber-800 transition-colors"
+                      className="text-[#d5c5ac] text-sm font-bold mb-6 text-left hover:text-[#d5c5ac] transition-colors"
                     >
                       {expandedServices.includes(index) ? 'Leer menos' : 'Leer más'}
                     </button>
@@ -202,7 +202,7 @@ export default function ServiciosPage() {
               href="https://wa.me/5491112345678?text=Hola,%20quiero%20hacer%20una%20consulta"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-linear-to-r from-amber-800 via-amber-700 to-amber-600 text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+              className="inline-flex items-center justify-center px-8 py-4 bg-[#d5c5ac] text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
             >
               Contactar ahora
             </a>

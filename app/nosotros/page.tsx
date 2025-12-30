@@ -106,7 +106,7 @@ export default function Nosotros() {
           </p>
           <Link 
             href="/contacto"
-            className="inline-block bg-gradient-to-r from-amber-800 to-amber-600 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold hover:from-amber-700 hover:to-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-block bg-[#d5c5ac] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Consultar mi caso
           </Link>

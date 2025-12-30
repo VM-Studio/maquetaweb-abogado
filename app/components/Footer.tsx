@@ -3,16 +3,16 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-100">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 md:px-10 lg:px-12 py-12 sm:py-16 md:py-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-10 sm:mb-12 text-center sm:text-left">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 sm:py-12 md:py-16 lg:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 mb-8 sm:mb-10 md:mb-12 text-center sm:text-left">
           {/* Brand Column */}
           <div className="sm:col-span-2">
-            <Link href="/" className="inline-block mb-4 sm:mb-5">
-              <span className="text-xl sm:text-2xl font-bold tracking-tight">
-                <span className="text-gray-900">AUGUSTO</span> <span className="text-amber-700">Filí</span>
+            <Link href="/" className="inline-block mb-3 sm:mb-4 md:mb-5">
+              <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
+                <span className="text-gray-900">AUGUSTO</span> <span className="text-[#d5c5ac]">Filí</span>
               </span>
             </Link>
-            <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-md mx-auto sm:mx-0">
+            <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed max-w-md mx-auto sm:mx-0">
               <span className="font-bold">Estudio jurídico</span> con más de <span className="font-bold">20 años de experiencia</span> brindando asesoramiento legal 
               integral en toda Argentina.
             </p>
@@ -20,27 +20,27 @@ export default function Footer() {
 
           {/* Navigation Column */}
           <div>
-            <h3 className="text-xs font-bold text-amber-700 uppercase tracking-wider mb-4 sm:mb-5">
+            <h3 className="text-xs font-bold text-[#d5c5ac] uppercase tracking-wider mb-4 sm:mb-5">
               Navegación
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">
+                <Link href="/" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">
+                <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">
+                <Link href="/nosotros" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-sm font-medium text-gray-700 hover:text-amber-700 transition-colors">
+                <Link href="/contacto" className="text-sm font-medium text-gray-700 hover:text-[#d5c5ac] transition-colors">
                   Contacto
                 </Link>
               </li>
@@ -49,17 +49,17 @@ export default function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-xs font-bold text-amber-700 uppercase tracking-wider mb-4 sm:mb-5">
+            <h3 className="text-xs font-bold text-[#d5c5ac] uppercase tracking-wider mb-4 sm:mb-5">
               Contacto
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+5491112345678" className="text-sm font-bold text-gray-700 hover:text-amber-700 transition-colors">
+                <a href="tel:+5491112345678" className="text-sm font-bold text-gray-700 hover:text-[#d5c5ac] transition-colors">
                   +54 9 11 1234-5678
                 </a>
               </li>
               <li>
-                <a href="mailto:contacto@augustofili.com" className="text-sm font-bold text-gray-700 hover:text-amber-700 transition-colors break-all">
+                <a href="mailto:contacto@augustofili.com" className="text-sm font-bold text-gray-700 hover:text-[#d5c5ac] transition-colors break-all">
                   contacto@augustofili.com
                 </a>
               </li>
@@ -83,7 +83,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-amber-700 transition-colors"
+                className="text-gray-400 hover:text-[#d5c5ac] transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ export default function Footer() {
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-amber-700 transition-colors"
+                className="text-gray-400 hover:text-[#d5c5ac] transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">

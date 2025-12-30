@@ -99,7 +99,7 @@ export default function ServicesHome() {
         <div className="text-center mt-12 sm:mt-16">
           <Link 
             href="/servicios"
-            className="inline-flex items-center justify-center px-6 py-3 bg-linear-to-r from-amber-800 via-amber-700 to-amber-600 text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+            className="inline-flex items-center justify-center px-6 py-3 bg-[#d5c5ac] text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
           >
             Ver todos los servicios
           </Link>

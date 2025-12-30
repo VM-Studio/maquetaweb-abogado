@@ -86,7 +86,7 @@ export default function PreguntasFrecuentes() {
                   <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center transition-transform duration-300"
                        style={{ transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                     <svg 
-                      className="w-5 h-5 text-amber-700" 
+                      className="w-5 h-5 text-[#d5c5ac]" 
                       fill="none" 
                       stroke="currentColor" 
                       viewBox="0 0 24 24"
@@ -129,7 +129,7 @@ export default function PreguntasFrecuentes() {
           </p>
           <Link 
             href="/contacto"
-            className="inline-block bg-gradient-to-r from-amber-800 to-amber-600 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold hover:from-amber-700 hover:to-amber-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-block bg-[#d5c5ac] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Consultar mi caso
           </Link>

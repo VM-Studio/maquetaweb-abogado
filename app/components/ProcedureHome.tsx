@@ -6,7 +6,7 @@ export default function ProcedureHome() {
       number: "1",
       title: "Nos contactás por WhatsApp",
       description: "Contanos tu situación. Te respondemos rápido, sin compromiso, y te explicamos si tu trámite debe hacerse en Córdoba.",
-      color: "bg-amber-700"
+      color: "bg-[#d5c5ac]"
     },
     {
       number: "2",
@@ -18,7 +18,7 @@ export default function ProcedureHome() {
       number: "3",
       title: "Arrancamos el trámite 100% online",
       description: "No importa dónde vivas. Nos encargamos de la gestión completa en la Oficina de Procesos Sucesorios de Córdoba.",
-      color: "bg-amber-700"
+      color: "bg-[#d5c5ac]"
     },
     {
       number: "4",
@@ -77,7 +77,7 @@ export default function ProcedureHome() {
             href="https://wa.me/5491112345678?text=Hola,%20quiero%20consultar%20mi%20caso%20de%20sucesión"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center group px-6 py-3 bg-linear-to-r from-amber-800 via-amber-700 to-amber-600 text-white text-sm sm:text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-md"
+            className="inline-flex items-center justify-center group px-6 py-3 bg-[#d5c5ac] text-white text-sm sm:text-base font-bold hover:shadow-2xl hover:scale-105 transition-all duration-300 rounded-md"
           >
             Quiero consultar mi caso
             <span className="inline-block ml-3 group-hover:translate-x-1 transition-transform text-lg">→</span>

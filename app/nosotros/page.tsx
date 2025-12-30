@@ -108,7 +108,7 @@ export default function Nosotros() {
             href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#e9a459] text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-block bg-blue-800 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Consultar mi caso
           </a>

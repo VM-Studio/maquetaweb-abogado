@@ -82,7 +82,7 @@ export default function Header() {
               </Link>
             <Link 
               href="/contacto" 
-              className="ml-2 lg:ml-3 px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold bg-[#e9a459] text-white hover:shadow-lg hover:scale-105 transition-all duration-300 rounded-md"
+              className="ml-2 lg:ml-3 px-4 lg:px-5 py-2 text-xs lg:text-sm font-bold bg-blue-800 text-white hover:shadow-lg hover:scale-105 transition-all duration-300 rounded-md"
             >
               Contacto
             </Link>
@@ -150,7 +150,7 @@ export default function Header() {
                 <div className="px-4 py-3">
                   <Link 
                     href="/contacto" 
-                    className="block px-6 py-3 text-sm font-bold bg-[#e9a459] text-white text-center hover:shadow-lg transition-all duration-300 rounded-md"
+                    className="block px-6 py-3 text-sm font-bold bg-blue-800 text-white text-center hover:shadow-lg transition-all duration-300 rounded-md"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contacto

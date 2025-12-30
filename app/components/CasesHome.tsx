@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HeroImage from '@/public/Hero.png';
+import NosotrosImage from '@/public/nosotros.png';
 
 export default function CasesHome() {
   const stats = [
@@ -27,12 +27,12 @@ export default function CasesHome() {
           
           {/* Imagen del estudio */}
           <div className="order-2 lg:order-1">
-            <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl bg-gray-100">
               <Image
-                src={HeroImage}
+                src={NosotrosImage}
                 alt="Estudio Augusto Filí y Asociados"
                 fill
-                className="object-cover"
+                className="object-cover object-[center_30%]"
                 priority
               />
             </div>
@@ -67,7 +67,7 @@ export default function CasesHome() {
                 href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-[#e9a459] text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md whitespace-nowrap"
+                className="inline-flex items-center justify-center px-6 py-3 bg-blue-800 text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md whitespace-nowrap"
               >
                 Consultar mi caso
               </a>

@@ -208,7 +208,7 @@ export default function ServiciosPage() {
               href="https://wa.me/5493515186325?text=Hola,%20quiero%20hacer%20una%20consulta"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-[#e9a459] text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+              className="inline-flex items-center justify-center px-8 py-4 bg-blue-800 text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
             >
               Contactar ahora
             </a>

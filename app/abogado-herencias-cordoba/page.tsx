@@ -36,7 +36,7 @@ export default function AbogadoHerenciasCordoba() {
                 href="https://wa.me/5493515186325?text=Hola,%20necesito%20hablar%20con%20un%20abogado%20de%20herencias"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-[#e9a459] text-white text-sm sm:text-base lg:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-800 text-white text-sm sm:text-base lg:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
               >
                 Hablar con un abogado →
               </a>

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HeroImage from '@/public/Hero.png';
+import Tribunales from '@/public/tribunales.png';
 
 export default function CasesHome() {
   const stats = [
@@ -19,20 +19,20 @@ export default function CasesHome() {
   ];
 
   return (
-    <section className="py-20 sm:py-24 md:py-28 px-6 sm:px-8 md:px-10 lg:px-12 bg-white">
-      <div className="max-w-7xl mx-auto">
-        
+    <section className="py-16 sm:py-20 md:py-24 lg:py-28 px-4 sm:px-6 md:px-10 lg:px-12 bg-slate-900">
+      <div className="max-w-6xl mx-auto">
+       
         {/* Grid: Imagen + Contenido */}
-        <div className="grid lg:grid-cols-2 gap-12 sm:gap-16 lg:gap-20 items-center mb-12 sm:mb-16">
-          
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center mb-12 sm:mb-14 md:mb-16">
+         
           {/* Imagen del estudio */}
           <div className="order-2 lg:order-1">
-            <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl bg-gray-100">
+            <div className="relative aspect-[4/3] rounded-lg sm:rounded-xl overflow-hidden shadow-2xl ring-1 ring-white/10">
               <Image
-                src={HeroImage}
+                src={Tribunales}
                 alt="Estudio Augusto Filí y Asociados"
                 fill
-                className="object-cover object-[center_30%]"
+                className="object-cover"
                 priority
               />
             </div>
@@ -40,41 +40,42 @@ export default function CasesHome() {
 
           {/* Contenido */}
           <div className="order-1 lg:order-2">
-            <span className="text-[10px] sm:text-xs font-black text-gray-400 uppercase tracking-[0.3em] block mb-4 sm:mb-6">
+            <span className="text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-[0.2em] block mb-3">
               Sobre el Estudio
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-5 sm:mb-6">
               Más de 20 años<br className="hidden sm:block" /> resolviendo sucesiones
             </h2>
 
-            <div className="space-y-4 sm:space-y-5 mb-8 sm:mb-10">
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-medium">
-                El Dr. Augusto Filí y su equipo nos especializamos exclusivamente en <strong className="text-gray-900">sucesiones y declaratorias de herederos</strong>. Esta dedicación nos permite atender casos de cualquier magnitud: desde trámites simples hasta situaciones complejas con conflictos familiares o bienes en distintas provincias.
+            <div className="space-y-4 mb-8">
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+                El Dr. Augusto Filí y su equipo nos especializamos exclusivamente en <strong className="text-white">sucesiones y declaratorias de herederos</strong>. Esta dedicación nos permite atender casos de cualquier magnitud: desde trámites simples hasta situaciones complejas con conflictos familiares o bienes en distintas provincias.
               </p>
-              
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-medium">
-                Entendemos que no siempre se cuenta con dinero en efectivo para arrancar. Por eso <strong className="text-gray-900">ofrecemos facilidades de pago</strong>, incluyendo tarjeta de crédito y cobro parcial a resultados.
+             
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+                Entendemos que no siempre se cuenta con dinero en efectivo para arrancar. Por eso <strong className="text-white">ofrecemos facilidades de pago</strong>, incluyendo tarjeta de crédito y cobro parcial a resultados.
               </p>
 
-              <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed font-medium">
-                Nuestros honorarios se pactan desde el inicio. <strong className="text-gray-900">Sin sorpresas ni regulaciones judiciales elevadas.</strong>
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+                Nuestros honorarios se pactan desde el inicio. <strong className="text-white">Sin sorpresas ni regulaciones judiciales elevadas.</strong>
               </p>
             </div>
 
+
             {/* Botones */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <a 
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
                 href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 bg-blue-800 text-white text-sm sm:text-base font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md whitespace-nowrap"
+                className="inline-flex items-center justify-center px-5 sm:px-6 py-3 bg-blue-600 text-white text-sm font-bold hover:bg-blue-500 hover:shadow-lg hover:shadow-blue-600/25 transition-all duration-300 rounded-sm"
               >
                 Consultar mi caso
               </a>
-              
-              <Link 
+             
+              <Link
                 href="/preguntas-frecuentes"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-gray-900 text-gray-900 text-sm sm:text-base font-bold hover:bg-gray-900 hover:text-white transition-all duration-300 rounded-md whitespace-nowrap"
+                className="inline-flex items-center justify-center px-5 sm:px-6 py-3 border border-slate-600 text-slate-300 text-sm font-bold hover:bg-slate-800 hover:text-white hover:border-slate-500 transition-all duration-300 rounded-sm"
               >
                 Ver preguntas frecuentes
               </Link>
@@ -82,14 +83,15 @@ export default function CasesHome() {
           </div>
         </div>
 
+
         {/* Estadísticas */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center bg-gray-50 py-5 sm:py-6 px-4 rounded-xl border border-gray-200">
-              <div className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 mb-1.5">
+            <div key={index} className="text-center bg-slate-800/50 py-5 sm:py-6 px-4 rounded-lg border border-slate-700/50">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">
                 {stat.value}
               </div>
-              <div className="text-[10px] sm:text-xs font-bold text-gray-600 uppercase tracking-wide">
+              <div className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wide">
                 {stat.label}
               </div>
             </div>

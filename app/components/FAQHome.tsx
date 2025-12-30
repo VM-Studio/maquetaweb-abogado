@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -37,47 +38,62 @@ export default function FAQHome() {
   };
 
   return (
-    <section className="py-20 sm:py-24 md:py-28 px-6 sm:px-8 md:px-10 lg:px-12 bg-gray-50">
-      <div className="max-w-4xl mx-auto">
-        {/* Título centrado minimalista */}
-        <div className="text-center mb-12 sm:mb-16 md:mb-20">
-          <span className="text-[10px] sm:text-xs font-black text-gray-400 uppercase tracking-[0.3em] block mb-4 sm:mb-6">
+    <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-10 lg:px-12 bg-slate-50">
+      <div className="max-w-3xl mx-auto">
+        {/* Título */}
+        <div className="text-center mb-10 sm:mb-12 md:mb-14">
+          <span className="text-[10px] sm:text-xs font-bold text-blue-800 uppercase tracking-[0.2em] block mb-3">
             Preguntas Frecuentes
           </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight px-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">
             ¿Tenés dudas?
           </h2>
         </div>
 
-        {/* FAQ Items - Compactos */}
+
+        {/* FAQ Items */}
         <div className="space-y-3">
           {faqs.map((faq, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden border-2 transition-all duration-300"
-              style={{ 
-                borderColor: openIndex === index ? 'rgba(150, 60, 0, 0.3)' : 'rgba(150, 60, 0, 0.1)'
-              }}
+              className={`bg-white rounded-lg overflow-hidden border transition-all duration-300 ${
+                openIndex === index
+                  ? 'border-blue-300 shadow-md'
+                  : 'border-gray-200 hover:border-blue-200'
+              }`}
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors"
+                className="w-full px-5 py-4 text-left flex items-center justify-between gap-4 hover:bg-slate-50/50 transition-colors"
               >
                 <span className="text-sm sm:text-base font-bold text-gray-900">
                   {faq.question}
                 </span>
-                <span className="shrink-0 text-lg font-bold text-gray-600">
-                  {openIndex === index ? '−' : '+'}
+                <span className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 ${
+                  openIndex === index
+                    ? 'bg-blue-800 text-white rotate-0'
+                    : 'bg-slate-100 text-gray-500'
+                }`}>
+                  <svg
+                    className={`w-4 h-4 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                  </svg>
                 </span>
               </button>
-              
-              {openIndex === index && (
-                <div className="px-5 pb-4 pt-0">
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
+             
+              <div className={`overflow-hidden transition-all duration-300 ${
+                openIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+              }`}>
+                <div className="px-5 pb-4">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
-              )}
+              </div>
             </div>
           ))}
         </div>

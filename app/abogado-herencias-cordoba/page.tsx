@@ -5,6 +5,7 @@ import ProcedureHome from '../components/ProcedureHome';
 import CasesHome from '../components/CasesHome';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import HeroImage from '@/public/Hero.png';
 
 export const metadata: Metadata = {
   title: 'Abogados de Herencias en Córdoba | AUGUSTO Filí & Asociados',
@@ -45,7 +46,7 @@ export default function AbogadoHerenciasCordoba() {
             <div className="relative flex flex-col items-center justify-center order-1 lg:order-2">
               <div className="relative w-full aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
                 <Image
-                  src="/hero.jpeg"
+                  src={HeroImage}
                   alt="Abogados de Herencias en Córdoba"
                   fill
                   className="object-cover"

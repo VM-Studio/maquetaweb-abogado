@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroImage from '@/public/Hero.png';
 
 export default function Hero() {
   return (
@@ -47,7 +48,7 @@ export default function Hero() {
           <div className="relative flex flex-col items-center justify-center order-1 lg:order-2">
             <div className="relative w-full aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
               <Image
-                src="/hero.jpeg"
+                src={HeroImage}
                 alt="Estudio jurídico especializado en sucesiones"
                 fill
                 className="object-cover"

@@ -1,18 +1,24 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import NavLogo from '@/public/navv.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100">
+    <footer className="bg-black border-t border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 sm:py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-10 lg:gap-12 mb-8 sm:mb-10 md:mb-12 text-center sm:text-left">
           {/* Brand Column */}
           <div className="sm:col-span-2">
             <Link href="/" className="inline-block mb-3 sm:mb-4 md:mb-5">
-              <span className="text-lg sm:text-xl md:text-2xl font-bold tracking-tight">
-                <span className="text-gray-900">AUGUSTO</span> <span className="text-[#e9a459]">Filí</span>
-              </span>
+              <Image
+                src={NavLogo}
+                alt="AUGUSTO Filí"
+                width={200}
+                height={70}
+                className="h-12 sm:h-14 md:h-16 lg:h-20 w-auto"
+              />
             </Link>
-            <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed max-w-md mx-auto sm:mx-0">
+            <p className="text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed max-w-md mx-auto sm:mx-0">
               <span className="font-bold">Estudio jurídico</span> con más de <span className="font-bold">20 años de experiencia</span> brindando asesoramiento legal 
               integral en toda Argentina.
             </p>
@@ -25,22 +31,22 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
+                <Link href="/" className="text-sm font-medium text-gray-400 hover:text-[#e9a459] transition-colors">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
+                <Link href="/preguntas-frecuentes" className="text-sm font-medium text-gray-400 hover:text-[#e9a459] transition-colors">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/nosotros" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
+                <Link href="/nosotros" className="text-sm font-medium text-gray-400 hover:text-[#e9a459] transition-colors">
                   Nosotros
                 </Link>
               </li>
               <li>
-                <Link href="/contacto" className="text-sm font-medium text-gray-700 hover:text-[#e9a459] transition-colors">
+                <Link href="/contacto" className="text-sm font-medium text-gray-400 hover:text-[#e9a459] transition-colors">
                   Contacto
                 </Link>
               </li>
@@ -54,16 +60,16 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="tel:+5493515186325" className="text-sm font-bold text-gray-700 hover:text-[#e9a459] transition-colors">
+                <a href="tel:+5493515186325" className="text-sm font-bold text-gray-400 hover:text-[#e9a459] transition-colors">
                   +54 9 351 518-6325
                 </a>
               </li>
               <li>
-                <a href="mailto:ab.augustofili@gmail.com" className="text-sm font-bold text-gray-700 hover:text-[#e9a459] transition-colors break-all">
+                <a href="mailto:ab.augustofili@gmail.com" className="text-sm font-bold text-gray-400 hover:text-[#e9a459] transition-colors break-all">
                   ab.augustofili@gmail.com
                 </a>
               </li>
-              <li className="text-sm font-medium text-gray-600">
+              <li className="text-sm font-medium text-gray-500">
                 Córdoba, Argentina
               </li>
             </ul>
@@ -71,7 +77,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 sm:pt-8 border-t border-gray-200">
+        <div className="pt-6 sm:pt-8 border-t border-gray-800">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-xs sm:text-sm font-medium text-gray-500 text-center sm:text-left">
               © {new Date().getFullYear()} <span className="font-bold">AUGUSTO Filí & Asociados</span>
@@ -83,7 +89,7 @@ export default function Footer() {
                 href="https://linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#e9a459] transition-colors"
+                className="text-gray-600 hover:text-[#e9a459] transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -94,7 +100,7 @@ export default function Footer() {
                 href="https://instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-[#e9a459] transition-colors"
+                className="text-gray-600 hover:text-[#e9a459] transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">

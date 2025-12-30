@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import HeroImage from '@/public/Hero.png';
 
 export const metadata: Metadata = {
   title: 'Nosotros | AUGUSTO Filí & Asociados',
@@ -38,7 +39,7 @@ export default function Nosotros() {
           <div className="grid lg:grid-cols-2 gap-10 sm:gap-12 lg:gap-16 items-center mb-20 sm:mb-24 md:mb-28">
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden">
               <Image 
-                src="/hero.jpeg" 
+                src={HeroImage}
                 alt="Dr. Augusto Filí"
                 fill
                 className="object-cover"

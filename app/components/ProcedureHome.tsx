@@ -6,7 +6,7 @@ export default function ProcedureHome() {
       number: "1",
       title: "Nos contactás por WhatsApp",
       description: "Contanos tu situación. Te respondemos rápido, sin compromiso, y te explicamos si tu trámite debe hacerse en Córdoba.",
-      color: "bg-[#e9a459]"
+      color: "bg-blue-600"
     },
     {
       number: "2",
@@ -18,7 +18,7 @@ export default function ProcedureHome() {
       number: "3",
       title: "Arrancamos el trámite 100% online",
       description: "No importa dónde vivas. Nos encargamos de la gestión completa en la Oficina de Procesos Sucesorios de Córdoba.",
-      color: "bg-[#e9a459]"
+      color: "bg-blue-600"
     },
     {
       number: "4",

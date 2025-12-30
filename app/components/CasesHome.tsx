@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroImage from '@/public/Hero.png';
 
 export default function CasesHome() {
   const stats = [
@@ -28,7 +29,7 @@ export default function CasesHome() {
           <div className="order-2 lg:order-1">
             <div className="relative aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/hero.jpeg"
+                src={HeroImage}
                 alt="Estudio Augusto Filí y Asociados"
                 fill
                 className="object-cover"

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import NavLogo from '@/public/navv.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,12 +29,12 @@ export default function Header() {
           <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
             {/* Logo - Responsive */}
             <Link href="/" className="flex items-center -ml-1 sm:-ml-2">
-              <div className="relative h-10 sm:h-12 md:h-16 lg:h-20 w-auto">
+              <div className="relative h-8 sm:h-10 md:h-12 lg:h-14 w-auto">
                 <Image
-                  src="/navv.png"
+                  src={NavLogo}
                   alt="Augusto Filí & Asociados"
-                  width={240}
-                  height={80}
+                  width={200}
+                  height={60}
                   className="object-contain h-full w-auto"
                   priority
                 />

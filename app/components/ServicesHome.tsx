@@ -2,6 +2,7 @@
 
 'use client';
 import Image from 'next/image';
+import { User, Briefcase, Handshake, Car, Globe, Users } from 'lucide-react';
 
 export default function ServicesHome() {
   const services = [
@@ -23,17 +24,17 @@ export default function ServicesHome() {
     {
       title: "Adjudicación de vehículos",
       description: "Gestión completa para transferir autos, motos y rodados a tu nombre. Incluye toda la documentación necesaria.",
-      gif: "/icono-Adjudicación.gif"
+  gif: "/icono-Adjudicacion.gif"
     },
     {
       title: "Representación desde cualquier provincia",
       description: "¿Vivís fuera de Córdoba pero la sucesión se tramita acá? Te representamos sin que tengas que viajar. Todo 100% online.",
-      gif: "/icono-Representación.gif"
+  gif: "/icono-Representacion.gif"
     },
     {
       title: "Negociación entre herederos",
       description: "Mediamos para llegar a acuerdos que respeten los derechos de todos. Evitamos juicios largos, costosos y regulaciones judiciales elevadas.",
-      gif: "/icono-Negociación.gif"
+  gif: "/icono-Negociacion.gif"
     }
   ];
 
@@ -57,9 +58,10 @@ export default function ServicesHome() {
               key={index}
               className="bg-white p-5 sm:p-6 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 flex items-start gap-4 sm:gap-5 group"
             >
-              {/* Icono */}
+              {/* Icono: GIF en desktop, Lucide en mobile */}
               <div className="shrink-0">
-                <div className="w-14 h-14 sm:w-16 sm:h-16 relative bg-slate-50 rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                {/* Desktop GIF */}
+                <div className="hidden sm:block w-14 h-14 sm:w-16 sm:h-16 relative bg-slate-50 rounded-lg overflow-hidden group-hover:scale-105 transition-transform duration-300">
                   <Image
                     src={service.gif}
                     alt={service.title}
@@ -68,8 +70,28 @@ export default function ServicesHome() {
                     unoptimized
                   />
                 </div>
+                {/* Mobile Lucide Icon */}
+                <div className="block sm:hidden w-14 h-14 flex items-center justify-center bg-slate-50 rounded-lg group-hover:scale-105 transition-transform duration-300">
+                  {(() => {
+                    switch (service.title) {
+                      case "Declaratoria de herederos":
+                        return <User size={32} className="text-blue-800" />;
+                      case "Sucesiones complejas":
+                        return <Briefcase size={32} className="text-blue-800" />;
+                      case "Tracto abreviado":
+                        return <Handshake size={32} className="text-blue-800" />;
+                      case "Adjudicación de vehículos":
+                        return <Car size={32} className="text-blue-800" />;
+                      case "Representación desde cualquier provincia":
+                        return <Globe size={32} className="text-blue-800" />;
+                      case "Negociación entre herederos":
+                        return <Users size={32} className="text-blue-800" />;
+                      default:
+                        return <User size={32} className="text-blue-800" />;
+                    }
+                  })()}
+                </div>
               </div>
-              
               {/* Contenido */}
               <div className="flex-1 min-w-0">
                 <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-1.5 leading-tight">

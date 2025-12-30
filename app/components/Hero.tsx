@@ -1,11 +1,25 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import HeroImage from "@/public/Hero.png"
+import HeroImage from "@/public/nosotros.png"
+import HeroBack from "@/public/Hero.png"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-12 bg-white pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
-      <div className="max-w-7xl mx-auto w-full">
+    <section className="relative min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-12 bg-white pt-20 sm:pt-24 md:pt-32 pb-12 sm:pb-16 md:pb-20 lg:pb-24 overflow-hidden">
+      {/* Background Image - Extremely subtle */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={HeroBack}
+          alt=""
+          fill
+          className="object-cover opacity-60"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 lg:gap-20 xl:gap-24 items-center">
           {/* Text Column - CENTRADO en mobile */}
           <div className="text-center lg:text-left order-2 lg:order-1">
@@ -46,7 +60,7 @@ export default function Hero() {
 
           {/* Image Column - Right */}
           <div className="relative flex flex-col items-center justify-center order-1 lg:order-2">
-            <div className="relative w-full aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
+            <div className="relative w-full aspect-[4/4] rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
               <Image
                 src={HeroImage}
                 alt="Estudio jurídico especializado en sucesiones"

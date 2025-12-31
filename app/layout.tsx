@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "./components/WhatsAppButton";
+import GoogleAdsTracking from "./components/GoogleAdsTracking";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -18,9 +19,9 @@ const robotoSlab = Roboto_Slab({
 });
 
 export const metadata: Metadata = {
-  title: "AUGUSTO Filí & Asociados | Estudio Jurídico en Buenos Aires",
-  description: "Estudio jurídico con más de 20 años de experiencia. Asesoramiento legal integral en derecho civil, comercial, laboral, penal y más. Primera consulta incluida en el costo del trabajo.",
-  keywords: "abogados, estudio jurídico, asesoramiento legal, buenos aires, derecho civil, derecho comercial, derecho laboral",
+  title: "Sucesiones y Declaratorias de Herederos en Córdoba | AUGUSTO Filí & Asociados",
+  description: "Estudio jurídico con más de 20 años de experiencia en sucesiones y declaratorias de herederos. Tramitamos más de 50 casos por año. 100% online.",
+  keywords: "sucesiones córdoba, declaratoria de herederos, abogado sucesiones, herencias córdoba, tracto abreviado",
   icons: {
     icon: [
       { url: '/fav.png' },
@@ -38,6 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
+      <head>
+        {/* Google Ads Tracking */}
+        <GoogleAdsTracking />
+      </head>
       <body
         className={`${montserrat.variable} ${robotoSlab.variable} antialiased font-sans text-gray-900 bg-white`}
       >

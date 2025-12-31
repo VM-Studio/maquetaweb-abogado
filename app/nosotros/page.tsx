@@ -2,7 +2,9 @@ import type { Metadata } from 'next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import HeroImage from '@/public/Hero.png';
+import HeroImage from "@/public/nosotros.png"
+
+import WhatsAppLink from '../components/Whatsapplink';
 
 export const metadata: Metadata = {
   title: 'Nosotros | AUGUSTO Filí & Asociados',
@@ -30,7 +32,7 @@ export default function Nosotros() {
   ];
 
   return (
-    <>
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Main Content */}
@@ -76,11 +78,7 @@ export default function Nosotros() {
               {values.map((value, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:scale-105"
-                  style={{
-                    border: '1.5px solid rgba(150, 60, 0, 0.15)',
-                    boxShadow: '0 2px 8px rgba(150, 60, 0, 0.05)'
-                  }}
+                  className="bg-white rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:scale-105 border border-gray-200 hover:border-blue-300 hover:shadow-lg"
                 >
                   <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
                     {value.title}
@@ -104,18 +102,16 @@ export default function Nosotros() {
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
             Agenda tu consulta y te explicamos cómo podemos ayudarte con tu caso.
           </p>
-          <a 
-            href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20mi%20caso"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-800 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          <WhatsAppLink
+            message="Hola, quiero consultar mi caso"
+            className="inline-block bg-blue-800 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             Consultar mi caso
-          </a>
+          </WhatsAppLink>
         </div>
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }

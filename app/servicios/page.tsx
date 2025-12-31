@@ -10,6 +10,7 @@ import IconoTracto from '@/public/icono-Tracto.gif';
 import IconoAdjudicacion from '@/public/icono-Adjudicacion.gif';
 import IconoRepresentacion from '@/public/icono-Representacion.gif';
 import IconoNegociacion from '@/public/icono-Negociacion.gif';
+import WhatsAppLink from '../components/Whatsapplink';
 
 export default function ServiciosPage() {
   const [expandedServices, setExpandedServices] = useState<number[]>([]);
@@ -27,7 +28,7 @@ export default function ServiciosPage() {
       title: "Declaratoria de herederos",
       description: "Gestionamos todo el trámite en la nueva Oficina de Procesos Sucesorios de Córdoba. Te acompañamos desde el inicio hasta que puedas disponer de los bienes de forma legal y ordenada.",
       gif: IconoDeclaratoria,
-      icon: "📄",
+      message: "Hola, quiero consultar sobre declaratoria de herederos",
       features: [
         "Presentación completa de documentación",
         "Gestión ante la Oficina de Procesos Sucesorios",
@@ -39,7 +40,7 @@ export default function ServiciosPage() {
       title: "Sucesiones complejas",
       description: "Resolvemos casos difíciles: conflictos entre herederos, bienes en distintas provincias o situaciones trabadas. Negociamos para evitar subastas y encontrar soluciones justas para todos.",
       gif: IconoSucesiones,
-      icon: "📚",
+      message: "Hola, tengo una sucesión compleja y necesito ayuda",
       features: [
         "Análisis integral del caso",
         "Mediación entre herederos",
@@ -51,7 +52,7 @@ export default function ServiciosPage() {
       title: "Tracto abreviado",
       description: "Transferencia directa de inmuebles sin escrituras intermedias. Ahorrás tiempo, costos y simplificás el proceso de transmisión de propiedades.",
       gif: IconoTracto,
-      icon: "🏠",
+      message: "Hola, quiero consultar sobre tracto abreviado",
       features: [
         "Sin escrituras intermedias innecesarias",
         "Reducción de costos notariales",
@@ -63,7 +64,7 @@ export default function ServiciosPage() {
       title: "Adjudicación de vehículos",
       description: "Gestión completa para transferir autos, motos y rodados a tu nombre. Nos encargamos de toda la documentación necesaria ante el Registro Nacional.",
       gif: IconoAdjudicacion,
-      icon: "🚗",
+      message: "Hola, necesito adjudicar un vehículo por sucesión",
       features: [
         "Trámite completo ante el Registro",
         "Documentación legal completa",
@@ -75,7 +76,7 @@ export default function ServiciosPage() {
       title: "Representación desde cualquier provincia",
       description: "¿Vivís fuera de Córdoba pero la sucesión se tramita acá? Te representamos sin que tengas que viajar. Todo el proceso es 100% online con firma digital.",
       gif: IconoRepresentacion,
-      icon: "🌎",
+      message: "Hola, necesito representación a distancia para una sucesión en Córdoba",
       features: [
         "Representación legal completa",
         "Trámite 100% online",
@@ -87,7 +88,7 @@ export default function ServiciosPage() {
       title: "Negociación entre herederos",
       description: "Mediamos para llegar a acuerdos que respeten los derechos de todos. Evitamos juicios largos, costosos y regulaciones judiciales elevadas.",
       gif: IconoNegociacion,
-      icon: "⚖️",
+      message: "Hola, tengo un conflicto con otros herederos",
       features: [
         "Mediación profesional y neutral",
         "Búsqueda de acuerdos equitativos",
@@ -104,13 +105,13 @@ export default function ServiciosPage() {
         {/* Hero Section */}
         <section className="py-16 sm:py-20 px-6 sm:px-8 md:px-10 lg:px-12 bg-gray-50">
           <div className="max-w-7xl mx-auto text-center">
-            <span className="text-[10px] sm:text-xs font-black text-gray-400 uppercase tracking-[0.3em] block mb-4 sm:mb-6">
+            <span className="text-[10px] sm:text-xs font-bold text-blue-800 uppercase tracking-[0.2em] block mb-4 sm:mb-6">
               Servicios Especializados
             </span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 tracking-tight mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6">
               Sucesiones y Declaratorias<br className="hidden sm:block" /> de Herederos
             </h1>
-            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto font-medium">
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
               Nos especializamos exclusivamente en sucesiones. Esta dedicación nos permite ofrecerte el mejor servicio y resolver tu caso de la manera más eficiente.
             </p>
           </div>
@@ -140,30 +141,28 @@ export default function ServiciosPage() {
 
                   {/* Contenido */}
                   <div className={`${index % 2 === 0 ? 'order-2' : 'order-2 lg:order-1'} flex flex-col`}>
-                    {/* Título - altura fija */}
+                    {/* Título */}
                     <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 tracking-tight h-16 sm:h-20 flex items-center">
                       {service.title}
                     </h2>
 
                     {/* Contenido expandible */}
                     <div className={`mb-4 ${!expandedServices.includes(index) ? 'max-h-24 overflow-hidden' : ''}`}>
-                      {/* Descripción */}
-                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium mb-6">
+                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-6">
                         {service.description}
                       </p>
 
-                      {/* Features con checkmarks */}
                       <ul className="space-y-3 mb-6">
                         {service.features.map((feature, idx) => (
                           <li key={idx} className="flex items-start gap-3">
                             <svg 
-                              className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" 
+                              className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" 
                               fill="currentColor" 
                               viewBox="0 0 20 20"
                             >
                               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                             </svg>
-                            <span className="text-sm sm:text-base text-gray-700 font-medium">
+                            <span className="text-sm sm:text-base text-gray-700">
                               {feature}
                             </span>
                           </li>
@@ -174,20 +173,18 @@ export default function ServiciosPage() {
                     {/* Botón Leer más/menos */}
                     <button
                       onClick={() => toggleService(index)}
-                      className="text-[#e9a459] text-sm font-bold mb-6 text-left hover:text-[#e9a459] transition-colors"
+                      className="text-blue-800 text-sm font-bold mb-6 text-left hover:text-blue-700 transition-colors"
                     >
                       {expandedServices.includes(index) ? 'Leer menos' : 'Leer más'}
                     </button>
 
                     {/* Botón */}
-                    <a
-                      href="https://wa.me/5493515186325?text=Hola,%20quiero%20consultar%20sobre%20este%20servicio"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <WhatsAppLink
+                      message={service.message}
                       className="inline-flex items-center justify-center px-5 py-2.5 bg-gray-200 text-gray-800 text-sm font-medium hover:bg-gray-300 transition-all duration-300 rounded-md"
                     >
                       Solicitar este servicio
-                    </a>
+                    </WhatsAppLink>
                   </div>
                 </div>
               ))}
@@ -198,20 +195,18 @@ export default function ServiciosPage() {
         {/* CTA Final */}
         <section className="py-16 sm:py-20 px-6 sm:px-8 md:px-10 lg:px-12 bg-gray-50">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-gray-900 mb-6 tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
               ¿No encontrás lo que buscás?
             </h2>
-            <p className="text-base sm:text-lg text-gray-600 mb-8 font-medium">
+            <p className="text-base sm:text-lg text-gray-600 mb-8">
               Cada caso es único. Contactanos y te asesoramos de forma personalizada.
             </p>
-            <a
-              href="https://wa.me/5493515186325?text=Hola,%20quiero%20hacer%20una%20consulta"
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message="Hola, quiero hacer una consulta"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-800 text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
             >
               Contactar ahora
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HeroImage from "@/public/nosotros.png"
 import HeroBack from "@/public/Hero.png"
+import WhatsAppLink from './Whatsapplink';
 
 export default function Hero() {
   return (
@@ -40,15 +41,13 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col  sm:flex-row gap-3 sm:gap-4 max-w-2xl mx-auto lg:mx-0">
-              <a 
-                href="https://wa.me/5493515186325?text=Hola,%20quiero%20iniciar%20una%20consulta%20sobre%20sucesiones%20y%20declaratorias%20de%20herederos"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-flex  items-center justify-center px-5 sm:px-6 py-3 bg-blue-800 text-white text-xs sm:text-sm font-bold tracking-wide hover:shadow-2xl hover:scale-105 rounded-sm transition-all duration-300 whitespace-nowrap"
+             <WhatsAppLink
+                message="Hola, quiero iniciar una consulta sobre sucesiones y declaratorias de herederos"
+                className="group inline-flex items-center justify-center px-5 sm:px-6 py-3 bg-blue-800 text-white text-xs sm:text-sm font-bold tracking-wide hover:shadow-2xl hover:scale-105 rounded-sm transition-all duration-300 whitespace-nowrap"
               >
                 Iniciar Consulta
                 <span className="inline-block ml-2  group-hover:translate-x-1 transition-transform">→</span>
-              </a>
+              </WhatsAppLink>
               <Link 
                 href="/preguntas-frecuentes"
                 className="inline-flex items-center justify-center px-5 sm:px-6 py-3 border-2 border-gray-900 text-gray-900 text-xs sm:text-sm font-bold tracking-wide hover:bg-gray-900 hover:text-white transition-all duration-300 rounded-sm whitespace-nowrap"

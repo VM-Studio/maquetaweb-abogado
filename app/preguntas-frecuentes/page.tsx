@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import WhatsAppLink from '../components/Whatsapplink';
 
 export default function PreguntasFrecuentes() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -43,17 +44,20 @@ export default function PreguntasFrecuentes() {
   ];
 
   return (
-    <>
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
       <section className="relative pt-24 md:pt-32 pb-8 sm:pb-10 md:pb-12 px-5 sm:px-8 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6">
+          <span className="text-[10px] sm:text-xs font-bold text-blue-800 uppercase tracking-[0.2em] block mb-4">
+            Resolvé tus dudas
+          </span>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Preguntas Frecuentes
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
-            Encuentra respuestas claras a las consultas más comunes sobre sucesiones. Si tu pregunta no está aquí, no dudes en contactarnos.
+          <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
+            Encontrá respuestas claras a las consultas más comunes sobre sucesiones. Si tu pregunta no está aquí, no dudes en contactarnos.
           </p>
         </div>
       </section>
@@ -65,49 +69,39 @@ export default function PreguntasFrecuentes() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl overflow-hidden transition-all duration-300"
-                style={{
-                  border: openIndex === index 
-                    ? '1.5px solid rgba(150, 60, 0, 0.3)' 
-                    : '1.5px solid rgba(150, 60, 0, 0.1)',
-                  boxShadow: openIndex === index 
-                    ? '0 4px 12px rgba(150, 60, 0, 0.08)' 
-                    : 'none'
-                }}
+                className={`bg-white rounded-lg overflow-hidden border transition-all duration-300 ${
+                  openIndex === index
+                    ? 'border-blue-300 shadow-md'
+                    : 'border-gray-200 hover:border-blue-200'
+                }`}
               >
                 <button
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full px-5 py-4 flex justify-between items-center text-left hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full px-5 py-4 flex justify-between items-center text-left hover:bg-slate-50/50 transition-colors duration-200"
                 >
-                  <h3 className="text-base sm:text-lg font-bold text-gray-900 pr-4">
+                  <h3 className="text-sm sm:text-base font-bold text-gray-900 pr-4">
                     {faq.question}
                   </h3>
-                  <div className="flex-shrink-0 w-6 h-6 flex items-center justify-center transition-transform duration-300"
-                       style={{ transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                    <svg 
-                      className="w-5 h-5 text-[#e9a459]" 
-                      fill="none" 
-                      stroke="currentColor" 
+                  <span className={`shrink-0 w-8 h-8 flex items-center justify-center rounded-full transition-all duration-300 ${
+                    openIndex === index
+                      ? 'bg-blue-800 text-white'
+                      : 'bg-slate-100 text-gray-500'
+                  }`}>
+                    <svg
+                      className={`w-4 h-4 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`}
+                      fill="none"
+                      stroke="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        strokeWidth={2.5} 
-                        d="M19 9l-7 7-7-7" 
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 
-                <div 
-                  className="overflow-hidden transition-all duration-300"
-                  style={{
-                    maxHeight: openIndex === index ? '500px' : '0',
-                    opacity: openIndex === index ? 1 : 0
-                  }}
-                >
-                  <p className="px-5 pb-5 text-gray-700 leading-relaxed">
+                <div className={`overflow-hidden transition-all duration-300 ${
+                  openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}>
+                  <p className="px-5 pb-5 text-sm sm:text-base text-gray-600 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -118,26 +112,24 @@ export default function PreguntasFrecuentes() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 sm:py-24 md:py-28 px-5 sm:px-8 bg-gray-50">
+      <section className="py-16 sm:py-20 md:py-24 px-5 sm:px-8 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             ¿No encontraste tu respuesta?
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Cada caso de sucesión es único. Contáctanos para una consulta personalizada y sin compromiso.
+          <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            Cada caso de sucesión es único. Contactanos para una consulta personalizada y sin compromiso.
           </p>
-          <a 
-            href="https://wa.me/5493515186325?text=Hola,%20tengo%20una%20pregunta%20sobre%20sucesiones"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-blue-800 text-white px-8 sm:px-10 py-4 rounded-md text-base sm:text-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+          <WhatsAppLink
+            message="Hola, tengo una pregunta sobre sucesiones"
+            className="inline-flex items-center justify-center px-8 py-4 bg-blue-800 text-white text-base sm:text-lg font-bold hover:shadow-xl hover:scale-105 transition-all duration-300 rounded-md"
           >
             Consultar mi caso
-          </a>
+          </WhatsAppLink>
         </div>
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }
